@@ -2,10 +2,9 @@
   "name": "react-timeless",
   "version": "0.3.1",
   "description": "A simple react timeline component for filtering data...",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src/Timeless.jsx --out-file dist/Timeless.js"
+    "test": "yarn jest --env=jsdom ./src",
+    "compile": "rm -rf lib && babel --plugins transform-class-properties,transform-object-rest-spread --presets env,react -d lib/ --ignore tests src/"
   },
   "repository": {
     "type": "git",
@@ -22,14 +21,25 @@
     "react-dom": "^15.0.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "css-loader": "^0.23.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.1",
+    "jest": "^25.1.0",
     "react": "^15.0.2",
-    "react-dom": "^15.0.2",
-    "sass-loader": "^3.1.2",
+    "react-dom": "^16.13.0",
+    "sass-loader": "^8.0.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.12"
   }

@@ -1,8 +1,7 @@
 'use strict';
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import Timeless from '../src/Timeless';
+import Timeless from '../src';
 
 const Main = React.createClass({
     getInitialState() {

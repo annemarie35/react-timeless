@@ -4,6 +4,10 @@
 
 A simple react timeline component for filtering data...
 
+## Before
+
+- use node version  12.16.0 
+
 ## Installation
 
 You can install React-Timeless via NPM and integrate it in you build process (using the tools of your choice: [Webpack](https://webpack.github.io/), [Browserify](http://browserify.org), etc).
